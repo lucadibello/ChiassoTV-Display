@@ -1,0 +1,6 @@
+html, body{
+    /* Remove all possible borders */
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0 !important;
+}

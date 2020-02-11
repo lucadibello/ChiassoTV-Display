@@ -120,7 +120,5 @@ function isArrayEmpty(data){
 }
 
 function isPlaylistEnded(data, video_index){
-    console.log("Current index: " + video_index);
-    console.log("Total videos:" + data.length);
     return video_index >= data.length;
 }

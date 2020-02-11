@@ -14,13 +14,16 @@ function get_videos_information(){
         dataType: 'json',
         url: config.api_url,
         method: "post",
+        async: false,
         data: {
             token: config.api_token
         },
         success: function (data) {
             console.log("Fetched video information");
             videos = data;
-            return data;
+
+            // Log video data in terminal
+            console.log(data);
         },
         error: function (xhr, ajaxOptions, thrownError) {
             console.error("Cannot fetch video information from " + config.api_url);

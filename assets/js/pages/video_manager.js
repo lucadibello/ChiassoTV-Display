@@ -13,11 +13,13 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             autoplay: 1,
             controls: 1,
-            modestbranding: 1,
+            modestbranding: 0,
             rel: 0,
+            showinfo: 0,
             fullscreen: 1,
             frameborder: 0,
-            enablejsapi: 1
+            enablejsapi: 1,
+            wmode: 'transparent'
         },
         events: {
             'onReady': onPlayerReady,
@@ -42,7 +44,7 @@ function onPlayerReady(event) {
         player.loadVideoById(video_id);
 
         // Set max volume
-        event.target.setVolume(100);
+        player.setVolume(100);
 
         // Play video
         event.target.playVideo();

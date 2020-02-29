@@ -44,10 +44,10 @@ function onPlayerReady(event) {
         player.loadVideoById(video_id);
 
         // Set max volume
-        player.setVolume(100);
+        player.setVolume(0);
 
         // Play video
-        event.target.playVideo();
+        player.playVideo();
     }
     else{
         // Array doesn't have any video information

@@ -44,7 +44,7 @@ function onPlayerReady(event) {
         player.loadVideoById(video_id);
 
         // Set max volume
-        player.setVolume(0);
+        player.setVolume(100);
 
         // Play video
         player.playVideo();
